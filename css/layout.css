@@ -1,0 +1,52 @@
+main {
+    display: block;
+    padding-top: 2em;
+}
+
+header {
+    height: 10em;
+    justify-content: center;
+    margin: auto;
+    width: 28em;
+    padding: 1em;
+    outline: solid var(--header-outline);
+    text-align: center;
+    border-radius: 15px;
+    font-size: 1.8em;
+}
+
+footer {
+    background: var(--bg);
+    color: var(--text);
+    padding: 1rem;
+    text-align: center;
+}
+
+footer div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer div p {
+    flex-basis: 100%;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.categories {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 1.2em;
+    }
+}

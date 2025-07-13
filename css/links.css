@@ -1,0 +1,57 @@
+/* Global link styles */
+a:link {
+    color: var(--primary);
+}
+
+a:visited {
+    color: var(--secondary);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+a:active {
+    color: var(--accent);
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem; /* spacing between links */
+    background-color: #2e3440; /* match your site's theme background */
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: fit-content;
+    box-sizing: border-box;
+}
+
+/* Navbar links */
+.navbar a {
+    background-color: #4c566a;
+    border-radius: 9px;
+    padding: 0.4em 0.9em;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1em;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px; /* optional: equal-ish width */
+}
+
+/* Navbar links hover */
+.navbar a:hover {
+    background-color: #5e81ac;
+    color: #eceff4;
+}
+
+/* Active navbar link */
+.navbar a.active {
+    background-color: #04aa6d;
+    color: #fff;
+}
